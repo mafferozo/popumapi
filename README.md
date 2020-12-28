@@ -22,9 +22,11 @@ Determine population based on a place name and radius.
 
 The api is just a single GET request with 2 query parameters:
 
-`GET /population?location={}&radius={}`
+Example request:
 
-example response:
+`GET /population?location=Utrecht&radius=10`
+
+Example response:
 
 ```json
 {
@@ -53,6 +55,8 @@ Inside the env, run the flask app:
 ```
 flask run
 ```
+
+You will also need the GeoTiff and TSV files per country, download respectively from [worldpop.org](worldpop.org) and [geonames.org](geonames.org), or from this temporary weTransfer mirror: [wetransfer](https://we.tl/t-okRsA07T1r). Unzip into data folder.
 
 # Limitations
 
