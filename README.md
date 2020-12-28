@@ -22,7 +22,7 @@ Determine population based on a place name and radius.
 
 The api is just a single GET request with 2 query parameters:
 
-GET /population?location={}&radius={}
+`GET /population?location={}&radius={}`
 
 example response:
 
