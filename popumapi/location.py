@@ -11,7 +11,7 @@ def add_file_to_map(map_obj, file):
     -------
         A `dict` object with string keys as location and `Coords` as value
     """
-    with open(file) as f:
+    with open(file, encoding="utf8") as f:
         lines = [line.split("\t") for line in f.readlines()]
         for line in lines:
             key = line[1].lower()
