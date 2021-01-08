@@ -83,6 +83,10 @@ class GeoTiffMap(PopulationMap):
     def compute_population(self, coords: Coords, radius: int):
         """ See base class. """
 
+        print("Using map: ", self._file_name)
+        print("Coordinates: ", coords)
+        print("Bounding Box: ", self._bounds)
+
         if not self.coords_in_bounds(coords):
             raise ValueError("Coordinates not in map")
 
@@ -122,4 +126,6 @@ def indices_in_radius(origin: Tuple[int, int], radius: int, width: int,
     for i in range(left_bound, right_bound):
         for j in range(lower_bound, upper_bound):
             if (i - x)**2 + (j - y)**2 < radius**2:
-                yield i, j
+                # apparantly, rows = height, columns = width.
+                # arr[j,i] = correct, arr[i,j] = not correct
+                yield j, i

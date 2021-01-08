@@ -34,6 +34,7 @@ class Population:
         """
         co = self.get_coords(loc)
         if co is not None:
+            print("Found coordinates: ", co)
             pop_map = self.choose_population_map(co)
             if pop_map is not None:
                 return {
