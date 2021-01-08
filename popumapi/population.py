@@ -40,10 +40,7 @@ class Population:
                     "coords": co,
                     "population_count": pop_map.compute_population(co, radius),
                 }
-        else:
-            return {
-                "error_message": "Couldn't find coordinate for given location"
-            }
+        return {"error_message": "Couldn't find coordinate for given location"}
 
     def choose_population_map(self, c: coords.Coords):
         """ Choose a population map that yields the best approximation.
