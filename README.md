@@ -7,7 +7,7 @@ Determine population based on a place name and radius.
 - Generate Population Density rasters for parts of the earth (worldpop.org)
 - Create a hashmap to find geocoordinates of locations based on keywords (geonames)
 - Given a geocoordinate, radius and a set of Population maps:
-  - Choose the map that yields the best approximation based on the geocoordinate and radius
+  - Choose the map that yields the best approximation based on the geocoordinate and radius.
     Smaller maps with higher resolution could give more accurate results for small radius, but is infeasible for large radius.
   - Transform the geocoordinate to an index in the map; x0, y0
   - Sum the cells of the map that lie inside the circle with origin x0,y0 and the given radius.
@@ -38,10 +38,10 @@ Example response:
 
 # Usage and Installation
 
-This project makes use of rasterio. The easiest way to get it running is by creating a conda virtual environment
+This project makes use of rasterio. A package is available on conda-forge. The easiest way to get it running is by creating a conda virtual environment
 
 ```
-conda create -f environment.yml
+conda env create -f environment.yml
 ```
 
 After that you can activate the environment using:

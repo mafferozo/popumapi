@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - flask=1.1.2=py_0
-  - rasterio=1.1.2=py38h900e953_0
-  - yapf=0.30.0=pyh9f0ad1d_0
-  - pylint=2.6.0=py38h32f6830_1
+  - flask=1.1.2
+  - rasterio=1.1.2
+  - yapf=0.30.0
+  - pylint=2.6.0
